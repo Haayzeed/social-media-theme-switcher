@@ -1,0 +1,225 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Inter', sans-serif;
+}
+h1, h3, h4, h5{
+	font-weight: bold;
+}
+.light{
+	background: hsl(0, 0%, 100%);
+	height: 100vh;
+	padding: 1% 0 3% 0;
+}
+.light-mode .total{
+	font-size: 13px;
+	font-weight: bold;
+	margin-top: -10px;
+}
+.dark{
+	font-size: 13px;
+	color: hsl(228, 12%, 44%);
+	font-weight: bold;
+}
+.sub-content{
+	margin-top: 1%;
+}
+.light-mode .main-card .card{
+	border: none;
+	background: hsl(225, 100%, 98%);
+	padding-top: 8%;
+}
+.light-mode .main-card .card:hover{
+	background: hsl(227, 47%, 96%);
+	cursor: pointer;
+}
+.light-mode .main-card .card span{
+	font-size: 13px;
+	font-weight: bold;
+}
+.light-mode .main-card .card-fb{
+	border-top: 4px solid hsl(195, 100%, 50%);
+}
+.light-mode .main-card .card-twitter{
+	border-top: 4px solid hsl(203, 89%, 53%);
+}
+.light-mode .main-card .card-instagram::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	background: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+.light-mode .main-card .card-youtube{
+	border-top: 4px solid hsl(348, 97%, 39%);
+}
+.light-mode .tag{
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size: 12px;
+	margin-top: -10px;
+}
+.light-mode .tag-date{
+	font-size: 12px;
+	color: hsl(163, 72%, 41%);
+	font-weight: bold;
+}
+.light-mode .tag-date-low{
+	font-size: 12px;
+	color: hsl(356, 69%, 56%);
+	font-weight: bold;
+}
+.light-mode.overview{
+	margin: 3% 0 1% 0;
+	color: hsl(228, 12%, 44%);
+}
+.light-mode .card{
+	padding: 8% 8% 3% 8%;
+	border: none;
+	background: hsl(225, 100%, 98%);
+}
+.light-mode .card:hover{
+	background: hsl(227, 47%, 96%);
+	cursor: pointer;
+}
+.light-mode .sub-overview-2{
+	margin-top: 4%;
+}
+.light-mode .sub-overview-1 p{
+	font-weight: bold;
+	font-size: 14px;
+}
+.light-mode .sub-overview-2 p{
+	font-size: 13px;
+	color: hsl(163, 72%, 41%);
+	font-weight: bold;
+}
+.light-mode .sub-overview .text-red{
+	font-size: 12px;
+	color: hsl(356, 69%, 56%);
+	font-weight: bold;
+}
+.light-mode.row-2{
+	margin-top: 2%;
+}
+
+/*Dark Mode*/
+.dark-mode{
+	background: hsl(230, 17%, 14%);
+	height: 100vh;
+	padding: 1% 0 3% 0;
+}
+.dark-mode-mode .total{
+	font-size: 13px;
+	font-weight: bold;
+	margin-top: -10px;
+	color: white;
+}
+.dark-mode-mode .txt{
+	color: white;
+}
+.dark-mode-mode .main-card .card{
+	border: none;
+	background: hsl(228, 28%, 20%);
+	padding-top: 8%;
+	color: white;
+}
+.dark-mode-mode .main-card .card:hover{
+	background: hsl(232, 19%, 15%);
+	cursor: pointer;
+}
+.dark-mode-mode .main-card .card span{
+	font-size: 13px;
+	font-weight: bold;
+}
+.dark-mode-mode .main-card .card-fb{
+	border-top: 4px solid hsl(195, 100%, 50%);
+}
+.dark-mode-mode .main-card .card-twitter{
+	border-top: 4px solid hsl(203, 89%, 53%);
+}
+.dark-mode-mode .main-card .card-instagram::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	background: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+.dark-mode-mode .main-card .card-youtube{
+	border-top: 4px solid hsl(348, 97%, 39%);
+}
+.dark-mode-mode .tag{
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size: 12px;
+	margin-top: -10px;
+}
+.dark-mode-mode .tag-date{
+	font-size: 12px;
+	color: hsl(163, 72%, 41%);
+	font-weight: bold;
+}
+.dark-mode-mode .tag-date-low{
+	font-size: 12px;
+	color: hsl(356, 69%, 56%);
+	font-weight: bold;
+}
+.dark-mode-mode .overview{
+	margin: 3% 0 1% 0;
+	color: #fff;
+}
+.dark-mode-mode .sub-overview .card{
+	padding: 8% 8% 3% 8%;
+	border: none;
+	background: hsl(228, 28%, 20%);
+	color: #fff;
+}
+.dark-mode-mode .sub-overview .card:hover{
+	background: hsl(232, 19%, 15%);
+	cursor: pointer;
+}
+.dark-mode-mode .sub-overview .card .text-dark-dark{
+	color: hsl(228, 34%, 66%);
+}
+.dark-mode-mode .sub-overview-2{
+	margin-top: 4%;
+}
+.dark-mode-mode .sub-overview-1 p{
+	font-weight: bold;
+	font-size: 14px;
+}
+.dark-mode-mode .sub-overview-2 p{
+	font-size: 13px;
+	color: hsl(163, 72%, 41%);
+	font-weight: bold;
+}
+.dark-mode-mode .sub-overview .text-red{
+	font-size: 12px;
+	color: hsl(356, 69%, 56%);
+	font-weight: bold;
+}
+.dark-mode-mode .row-2{
+	margin-top: 2%;
+}
+@media(max-width: 576px){
+	.light, .dark-mode{
+		height: 100%;
+	}
+	.dark {
+		width: 100%;
+	}
+	.dark span{
+		float: left;
+	}
+	.light-mode .main-card .card,.light-mode .card, .dark-mode-mode .main-card .card, .dark-mode-mode .sub-overview .card{
+		margin-bottom: 5%;
+	}
+}
