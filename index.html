@@ -11,6 +11,64 @@
   <style>
   .attribution { font-size: 11px; text-align: center; }
   .attribution a { color: hsl(228, 45%, 44%); }
+  /* The switch - the box around the slider */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 20px;
+  }
+
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  input:checked + .slider {
+    background-image: linear-gradient(to right, hsl(230, 17%, 14%), hsl(163, 72%, 41%));
+  }
+
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
+  }
 </style>
 </head>
 <body>
@@ -36,35 +94,35 @@
       <div class="row sub-content light-mode">
         <div class="col-md-3 main-card">
           <div class="card text-center card-fb">
-            <p><img src="images/icon-facebook.svg"> <span>@nathanf</span></p>
+            <p><img src="images/icon-facebook.svg" alt="image"> <span>@nathanf</span></p>
             <h1>1987</h1>
             <p class="tag">Followers</p>
-            <p class="tag-date"><span><img src="images/icon-up.svg"></span> 12 Today</p>
+            <p class="tag-date"><span><img src="images/icon-up.svg" alt="image"></span> 12 Today</p>
           </div>
 
         </div>
         <div class="col-md-3 main-card">
           <div class="card text-center card-twitter">
-            <p><img src="images/icon-twitter.svg"> <span>@nathanf</span></p>
+            <p><img src="images/icon-twitter.svg" alt="image"> <span>@nathanf</span></p>
             <h1>1044</h1>
             <p class="tag">Followers</p>
-            <p class="tag-date"><span><img src="images/icon-up.svg"></span> 99 Today</p>
+            <p class="tag-date"><span><img src="images/icon-up.svg" alt="image"></span> 99 Today</p>
           </div>
         </div>
         <div class="col-md-3 main-card">
           <div class="card text-center card-instagram">
-            <p><img src="images/icon-instagram.svg"> <span>@realnathanf</span></p>
+            <p><img src="images/icon-instagram.svg" alt="image"> <span>@realnathanf</span></p>
             <h1>11k</h1>
             <p class="tag">Followers</p>
-            <p class="tag-date"><span><img src="images/icon-up.svg"></span> 1099 Today</p>
+            <p class="tag-date"><span><img src="images/icon-up.svg" alt="image"></span> 1099 Today</p>
           </div>
         </div>
         <div class="col-md-3 main-card">
           <div class="card text-center card-youtube">
-            <p><img src="images/icon-youtube.svg"> <span>Nathan F.</span></p>
+            <p><img src="images/icon-youtube.svg" alt="image"> <span>Nathan F.</span></p>
             <h1>8239</h1>
             <p class="tag">Subscribers</p>
-            <p class="tag-date-low"><span><img src="images/icon-down.svg"></span> 144 Today</p>
+            <p class="tag-date-low"><span><img src="images/icon-down.svg" alt="image"></span> 144 Today</p>
           </div>
 
         </div>
@@ -83,7 +141,7 @@
                 <p class="text-dark-dark">Page Views</p>
               </div>
               <div class="col text-right">
-                <img src="images/icon-facebook.svg">
+                <img src="images/icon-facebook.svg" alt="image">
               </div>
             </div>
             <div class="row sub-overview-2">
@@ -91,7 +149,7 @@
                 <h3>87</h3>
               </div>
               <div class="col pt-2 text-right">
-                <p class=""><span><img src="images/icon-up.svg"></span> 3%</p>
+                <p class=""><span><img src="images/icon-up.svg" alt="image"></span> 3%</p>
               </div>
             </div>
           </div>
@@ -104,7 +162,7 @@
                 <p class="text-dark-dark">Likes</p>
               </div>
               <div class="col text-right">
-                <img src="images/icon-facebook.svg">
+                <img src="images/icon-facebook.svg" alt="image">
               </div>
             </div>
             <div class="row sub-overview-2">
@@ -112,7 +170,7 @@
                 <h3>52</h3>
               </div>
               <div class="col pt-2 text-right">
-                <p class="text-red"><span><img src="images/icon-down.svg"></span> 3%</p>
+                <p class="text-red"><span><img src="images/icon-down.svg" alt="image"></span> 3%</p>
               </div>
             </div>
           </div>
@@ -125,7 +183,7 @@
                 <p class="text-dark-dark">Likes</p>
               </div>
               <div class="col text-right">
-                <img src="images/icon-instagram.svg">
+                <img src="images/icon-instagram.svg" alt="image">
               </div>
             </div>
             <div class="row sub-overview-2">
@@ -133,7 +191,7 @@
                 <h3>5462</h3>
               </div>
               <div class="col pt-2 text-right">
-                <p class=""><span><img src="images/icon-up.svg"></span> 2257%</p>
+                <p class=""><span><img src="images/icon-up.svg" alt="image"></span> 2257%</p>
               </div>
             </div>
           </div>
@@ -146,7 +204,7 @@
                 <p class="text-dark-dark">Profile Views</p>
               </div>
               <div class="col text-right">
-                <img src="images/icon-instagram.svg">
+                <img src="images/icon-instagram.svg" alt="image">
               </div>
             </div>
             <div class="row sub-overview-2">
@@ -154,7 +212,7 @@
                 <h3>52k</h3>
               </div>
               <div class="col pt-2 text-right">
-                <p class=""><span><img src="images/icon-up.svg"></span> 1375%</p>
+                <p class=""><span><img src="images/icon-up.svg" alt="image"></span> 1375%</p>
               </div>
             </div>
           </div>
@@ -169,7 +227,7 @@
                 <p class="text-dark-dark">Retweet</p>
               </div>
               <div class="col text-right">
-                <img src="images/icon-twitter.svg">
+                <img src="images/icon-twitter.svg" alt="image">
               </div>
             </div>
             <div class="row sub-overview-2">
@@ -177,7 +235,7 @@
                 <h3>117</h3>
               </div>
               <div class="col pt-2 text-right">
-                <p class=""><span><img src="images/icon-up.svg"></span> 303%</p>
+                <p class=""><span><img src="images/icon-up.svg" alt="image"></span> 303%</p>
               </div>
             </div>
           </div>
@@ -190,7 +248,7 @@
                 <p class="text-dark-dark">Likes</p>
               </div>
               <div class="col text-right">
-                <img src="images/icon-twitter.svg">
+                <img src="images/icon-twitter.svg" alt="image">
               </div>
             </div>
             <div class="row sub-overview-2">
@@ -198,7 +256,7 @@
                 <h3>507</h3>
               </div>
               <div class="col pt-2 text-right">
-                <p class=""><span><img src="images/icon-up.svg"></span> 553%</p>
+                <p class=""><span><img src="images/icon-up.svg" alt="image"></span> 553%</p>
               </div>
             </div>
           </div>
@@ -211,7 +269,7 @@
                 <p class="text-dark-dark">Likes</p>
               </div>
               <div class="col text-right">
-                <img src="images/icon-youtube.svg">
+                <img src="images/icon-youtube.svg" alt="image">
               </div>
             </div>
             <div class="row sub-overview-2">
@@ -219,7 +277,7 @@
                 <h3>107</h3>
               </div>
               <div class="col pt-2 text-right">
-                <p class="text-red"><span><img src="images/icon-down.svg"></span> 19%</p>
+                <p class="text-red"><span><img src="images/icon-down.svg" alt="image"></span> 19%</p>
               </div>
             </div>
           </div>
@@ -232,7 +290,7 @@
                 <p class="text-dark-dark">Total Views</p>
               </div>
               <div class="col text-right">
-                <img src="images/icon-youtube.svg">
+                <img src="images/icon-youtube.svg" alt="image">
               </div>
             </div>
             <div class="row sub-overview-2">
@@ -240,7 +298,7 @@
                 <h3>1407</h3>
               </div>
               <div class="col pt-2 text-right">
-                <p class="text-red"><span><img src="images/icon-down.svg"></span> 12%</p>
+                <p class="text-red"><span><img src="images/icon-down.svg" alt="image"></span> 12%</p>
               </div>
             </div>
           </div>
@@ -254,70 +312,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </body>
 </html>
-<style type="text/css">
-/* The switch - the box around the slider */
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 50px;
-  height: 20px;
-}
 
-/* Hide default HTML checkbox */
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-/* The slider */
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 15px;
-  width: 15px;
-  left: 4px;
-  bottom: 3px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-input:checked + .slider {
-  background-image: linear-gradient(to right, hsl(230, 17%, 14%), hsl(163, 72%, 41%));
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px linear-gradient(to right, hsl(230, 17%, 14%), hsl(163, 72%, 41%));
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
-</style>
 <script>
   $(function(){
     $('input[type="checkbox"]').click(function(){
